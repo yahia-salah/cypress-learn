@@ -1,10 +1,18 @@
 {
     "chromeWebSecurity": false,
     "experimentalSourceRewriting": true,
-    "integrationFolder":"cypress/integration/tests",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": true,
+        "json": true
+    },
+    "integrationFolder": "cypress/integration/tests",
     "env": {
         "url": "https://rahulshettyacademy.com/seleniumPractise/#/"
     },
     "viewportHeight": 768,
-    "viewportWidth": 1024
+    "viewportWidth": 1024,
+    "projectId": "7r84rc"
 }

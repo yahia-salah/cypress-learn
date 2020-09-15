@@ -15,7 +15,7 @@ describe('Products Page Tests', () => {
         productsPage.getProductNameOf(productsPage.getProducts().eq(1)).should('contain.text', 'Carrot');
     })
 
-    it('Increment and decrement quanityt of product', () => {
+    it('Increment and decrement quantity of product', () => {
         productsPage.search('ca');
         productsPage.getProductQuantityOf(productsPage.getProducts().eq(0)).should('have.value', '1');
         productsPage.getProductQuantityIncrementOf(productsPage.getProducts().eq(0)).click();

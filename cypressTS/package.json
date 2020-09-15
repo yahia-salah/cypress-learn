@@ -4,14 +4,19 @@
   "description": "Cypress Typescript",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:open": "node_modules/.bin/cypress open",
+    "cypress:run": "node_modules/.bin/cypress run",
+    "test:headless:chrome": "npm run cypress:run -- --headless --browser chrome",
+    "test:headed:chrome": "npm run cypress:run -- --headed --browser chrome",
+    "test:headless:chrome:record":"npm run test:headless:chrome -- --record --key fdd37069-987b-4182-bdd9-3f63917e068f"
   },
   "author": "Yahia S Ali",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^5.2.0",
     "cypress-iframe": "^1.0.1",
+    "mocha": "^8.1.3",
+    "mochawesome": "^6.1.1",
     "typescript": "^4.0.2"
   },
   "dependencies": {
