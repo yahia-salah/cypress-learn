@@ -5,7 +5,7 @@
     "reporterOptions": {
         "reportDir": "cypress/results",
         "overwrite": false,
-        "html": true,
+        "html": false,
         "json": true
     },
     "integrationFolder": "cypress/integration/tests",
