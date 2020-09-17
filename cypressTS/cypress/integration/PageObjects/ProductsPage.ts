@@ -51,5 +51,7 @@ export class ProductsPage {
             cy.wait(2000);
         })
     }
-
+    openTopDeals(){
+        cy.get('a').contains('Top Deals').invoke('removeAttr','target').click();
+    }
 }
